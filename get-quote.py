@@ -1,12 +1,15 @@
+import random
 def main():
-   print("Keep it logically awesome.");
-  print("Favor focus over features");
-  print("Anything added dilutes everything else")
-  #f = open("quotes.txt")
-  #quotes = f.readlines()
-  #f.close()
+  # print("Keep it logically awesome.")
 
-  #print(quotes)
+  f = open("quotes.txt")
+  quotes = f.readlines()
+  f.close()
 
+  #print(quotes[13])
+
+  last = 13
+  rnd= random.randint(0, last)
+  print (quotes[rnd])
 if __name__== "__main__":
   main()
